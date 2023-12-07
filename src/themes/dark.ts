@@ -6,5 +6,5 @@ export default {
     backgroundColor: '#242525',
     textColor: '#A9A093',
     title: '#e5e0d8',
-  }
+  },
 }

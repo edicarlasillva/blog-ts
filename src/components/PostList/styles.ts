@@ -4,7 +4,7 @@ export const Title = styled.div`
   margin-bottom: 45px;
 
   h1 {
-    color: ${({theme}) => theme.colors.title};
+    color: ${({ theme }) => theme.colors.title};
     font-family: Kumbh Sans;
     font-size: 36px;
     font-style: normal;
@@ -14,7 +14,7 @@ export const Title = styled.div`
   }
 
   span {
-    color: ${({theme}) => theme.colors.textColor};
+    color: ${({ theme }) => theme.colors.textColor};
     font-family: Open Sans;
     font-size: 16px;
     font-style: normal;

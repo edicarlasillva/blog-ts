@@ -1,9 +1,9 @@
-import { Header } from "../../components/Header";
-import { PostList } from "../../components/PostList";
+import { Header } from '../../components/Header'
+import { PostList } from '../../components/PostList'
 
-import { posts } from "../../posts";
+import { posts } from '../../posts'
 
-import { Container, Wrapper } from "./styles";
+import { Container, Wrapper } from './styles'
 
 export function HomePage() {
   return (
@@ -15,5 +15,5 @@ export function HomePage() {
         </Container>
       </Wrapper>
     </>
-  );
+  )
 }

@@ -1,27 +1,29 @@
-import { IPost } from "../PostList";
+import { IPost } from '../PostList'
 
-import { PostItem } from "./styles";
+import { PostItem } from './styles'
 
 interface PostProps {
-  post: IPost;
+  post: IPost
 }
 
 export function Post({ post }: PostProps) {
+  const { author, avatar, category, createdAt, description, image, title } =
+    post
   return (
-    <PostItem>
-      <img src={post.image} alt="" />
+    <PostItem category={category}>
+      <img src={image} alt="" />
       <p className="category">
-        <span>in</span> {post.category}
+        <span>in</span> {category}
       </p>
-      <h2 className="title">{post.title}</h2>
+      <h2 className="title">{title}</h2>
       <div className="post-info">
-        <img src={post.avatar} alt="" />
+        <img src={avatar} alt="" />
         <div>
-          <span className="author">{post.author}</span>
-          <span>{post.createdAt}</span>
+          <span className="author">{author}</span>
+          <span>{createdAt}</span>
         </div>
       </div>
-      <p className="description">{post.description}</p>
+      <p className="description">{description}</p>
     </PostItem>
-  );
+  )
 }
